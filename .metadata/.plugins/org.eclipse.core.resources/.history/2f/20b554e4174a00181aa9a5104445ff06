@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: cokecustomerservice
+  profiles:
+    active: prod
+  datasource:
+    url: jdbc:postgresql://54.186.137.133:5432/coke_micro
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+      
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 70000
+        readTimeout: 70000
+        loggerLevel: basic

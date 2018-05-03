@@ -1,0 +1,14 @@
+spring.application.name=coke_points_service
+server.port=8200
+spring.profiles.active=prod
+spring.datasource.url=jdbc:postgresql://54.186.137.133:5432/coke_micro
+spring.datasource.username=postgres
+spring.datasource.password=password
+spring.datasource.driver-class-name=org.postgresql.Driver
+spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
+eureka.client.service-url.default-zone=http://localhost:8761/eureka
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds=7000
+feign.client.config.default.connectTimeout: 70000
+feign.client.default.connect-timeout=70000
+feign.client.default.read-timeout=70000
+feign.client.config.default.readTimeout:70000
