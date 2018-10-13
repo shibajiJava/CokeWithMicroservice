@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="coke_naming_service"/>
-<aop-project name="coke_customer_service"/>
 <aop-project name="coke-api-gateway-server"/>
+<aop-project name="coke_customer_service"/>
 <aop-project name="coke_configuration_server"/>
 <aop-project name="coke_points_service"/>
 <aop-project name="CokeApplicationConfig">
 <aspect-definition advice-class-name="com.netflix.hystrix.contrib.javanica.aop.aspectj.HystrixCommandAspect" advice-method-name="methodsAnnotatedWithHystrixCommand(org.aspectj.lang.ProceedingJoinPoint)" advice-type="AROUND" aspect-end-line-number="-1" aspect-name="hystrixCommandAspect" aspect-start-line-number="-1" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/CokeApplicationConfig/src/main/java/com/ibm/coke/configuration/CokeApplicationConfigApplication.java" pointcut-expression="hystrixCommandAnnotationPointcut() || hystrixCollapserAnnotationPointcut()" proxy-target-class="true">
-<aop-reference advice-type="AROUND" bean="1:BeansModel|2:CokeApplicationConfig|3:java:com.ibm.coke.configuration.CokeApplicationConfigApplication|8:cokeConfigurationController:14" bean-file="/CokeApplicationConfig/src/main/java/com/ibm/coke/configuration/CokeConfigurationController.java" bean-start-line="14" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/CokeApplicationConfig/src/main/java/com/ibm/coke/configuration/CokeApplicationConfigApplication.java" source="=CokeApplicationConfig/C:\/Users\/IBM_ADMIN\/.m2\/repository\/com\/netflix\/hystrix\/hystrix-javanica\/1.5.12\/hystrix-javanica-1.5.12.jar&lt;com.netflix.hystrix.contrib.javanica.aop.aspectj(HystrixCommandAspect.class[HystrixCommandAspect~methodsAnnotatedWithHystrixCommand~Lorg.aspectj.lang.ProceedingJoinPoint;" source-start-line="-1" target="=CokeApplicationConfig/src\/main\/java&lt;com.ibm.coke.configuration{CokeConfigurationController.java[CokeConfigurationController~getConfiguration" target-start-line="26"/>
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:CokeApplicationConfig|3:java:com.ibm.coke.configuration.CokeApplicationConfigApplication|8:cokeConfigurationController:14" bean-file="/CokeApplicationConfig/src/main/java/com/ibm/coke/configuration/CokeConfigurationController.java" bean-start-line="14" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/CokeApplicationConfig/src/main/java/com/ibm/coke/configuration/CokeApplicationConfigApplication.java" source="=coke-api-gateway-server/C:\/Users\/IBM_ADMIN\/.m2\/repository\/com\/netflix\/hystrix\/hystrix-javanica\/1.5.12\/hystrix-javanica-1.5.12.jar&lt;com.netflix.hystrix.contrib.javanica.aop.aspectj(HystrixCommandAspect.class[HystrixCommandAspect~methodsAnnotatedWithHystrixCommand~Lorg.aspectj.lang.ProceedingJoinPoint;" source-start-line="-1" target="=CokeApplicationConfig/src\/main\/java&lt;com.ibm.coke.configuration{CokeConfigurationController.java[CokeConfigurationController~getConfiguration" target-start-line="26"/>
 </aspect-definition>
 </aop-project>
 </aop-reference-model>
